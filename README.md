@@ -1,12 +1,73 @@
-# React + Vite
+# Personal Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal Manager - это приложение для управления сотрудниками, созданное с использованием React и Vite.
 
-Currently, two official plugins are available:
+## Установка
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Клонируйте репозиторий:
+    ```sh
+    git clone https://github.com/ksavdev/personal-manager.git
+    ```
+2. Перейдите в директорию проекта:
+    ```sh
+    cd personal-manager
+    ```
+3. Установите зависимости:
+    ```sh
+    npm install
+    ```
 
-## Expanding the ESLint configuration
+## Скрипты
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- `npm run dev` - Запуск приложения в режиме разработки.
+- `npm run build` - Сборка приложения для продакшена.
+- `npm run lint` - Запуск ESLint для проверки кода.
+- `npm run preview` - Предпросмотр собранного приложения.
+
+## Структура проекта
+
+```
+personal-manager/
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package.json
+├── README.md
+├── vite.config.js
+├── public/
+└── src/
+    ├── index.css
+    ├── main.jsx
+    ├── assets/
+    └── components/
+        ├── app/
+        │   ├── app.css
+        │   └── app.jsx
+        ├── app-filter/
+        │   ├── app-filter.css
+        │   └── app-filter.jsx
+        ├── app-info/
+        │   ├── app-info.css
+        │   └── app-info.jsx
+        ├── employees-add-form/
+        │   ├── employees-add-form.css
+        │   └── employees-add-form.jsx
+        ├── employees-list/
+        │   ├── employees-list.css
+        │   └── employees-list.jsx
+        ├── employees-list-item/
+        │   ├── employees-list-item.css
+        │   └── employees-list-item.jsx
+        └── search-panel/
+            ├── search-panel.css
+            └── search-panel.jsx
+```
+
+## Используемые технологии
+
+- React
+- Vite
+- ESLint
+- Bootstrap
+- Font Awesome
+
